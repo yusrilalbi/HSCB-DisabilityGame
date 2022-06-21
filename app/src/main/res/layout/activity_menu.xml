@@ -37,31 +37,31 @@
         android:paddingBottom="30dp">
 
         <TextView
-            android:layout_marginLeft="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:text="GAMES" />
 
         <LinearLayout
-            android:layout_marginTop="7dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:orientation="vertical"
                 android:paddingRight="5dp">
 
                 <ImageView
                     android:id="@+id/tesColor"
-                    android:layout_margin="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:src="@drawable/logocolor" />
 
@@ -73,10 +73,10 @@
             </LinearLayout>
 
             <LinearLayout
-                android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:orientation="vertical"
                 android:paddingRight="5dp">
 
@@ -97,64 +97,64 @@
         </LinearLayout>
 
         <TextView
-            android:layout_marginLeft="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:layout_marginTop="15dp"
             android:text="HINT" />
 
         <LinearLayout
-            android:layout_marginTop="7dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:orientation="vertical"
                 android:paddingRight="5dp">
 
-                <ImageView
-                    android:id="@+id/exColor"
-                    android:layout_margin="5dp"
+                <ImageButton
+                    android:id="@+id/exHint"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:src="@drawable/logocolor2" />
+                    android:src="@drawable/hint" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Color Blind Test" />
+                    android:text="Hint" />
             </LinearLayout>
 
             <LinearLayout
 
-                android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:orientation="vertical"
                 android:paddingRight="5dp">
 
-                <ImageView
-                    android:id="@+id/exHand"
-                    android:layout_margin="5dp"
+                <ImageButton
+                    android:id="@+id/exLeader"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:src="@drawable/logohand2" />
+                    android:src="@drawable/leaderboard" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Hand Sign" />
+                    android:text="Leader Board" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

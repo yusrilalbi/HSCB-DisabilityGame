@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".question">
+    tools:context=".testHandLevel1">
 
     <LinearLayout
         android:id="@+id/headersoal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFEB3B"
+        android:background="#4CAF50"
         android:orientation="vertical"
         android:padding="30dp">
 
