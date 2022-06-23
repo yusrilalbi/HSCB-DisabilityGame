@@ -38,9 +38,6 @@ class testHandLevel1 : AppCompatActivity() {
             userglobal = userintent
         }
 
-        var header = findViewById<TextView>(R.id.judul)
-        header.text = "Color Blind Test"
-
         repeatan()
 
     }

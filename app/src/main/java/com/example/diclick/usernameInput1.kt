@@ -17,6 +17,11 @@ class usernameInput1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_username_input1)
 
+        var backgo = findViewById<Button>(R.id.backgo)
+        backgo.setOnClickListener(){
+            startActivity(Intent(this,handLevel::class.java))
+        }
+
         var enter = findViewById<Button>(R.id.enter)
         var username = findViewById<EditText>(R.id.username)
         var delete = findViewById<Button>(R.id.delete)

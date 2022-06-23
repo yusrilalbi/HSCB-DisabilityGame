@@ -15,18 +15,28 @@
         android:padding="30dp">
 
         <TextView
+            android:gravity="center"
             android:id="@+id/judul"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
-            android:text="SOAL"
-            android:textSize="20sp" />
+            android:text="HAND SIGN"
+            android:textSize="30sp" />
 
         <View
             android:id="@+id/divider"
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/cyl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-black"
+            android:text="SOAL"
+            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -42,14 +52,22 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="#000000"
-            android:src ="@drawable/color1"/>
+            android:src ="@drawable/hand1"/>
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/soaltulisan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gambar"
+        android:gravity="center"
+        android:text="Apakah Arti dari Hand Sign di atas ?"
+        android:textSize="20sp" />
     <LinearLayout
         android:layout_marginTop="20dp"
         android:id="@+id/ab"
         android:gravity="center"
-        android:layout_below="@+id/gambar"
+        android:layout_below="@+id/soaltulisan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 

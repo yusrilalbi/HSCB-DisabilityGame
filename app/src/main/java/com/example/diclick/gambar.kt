@@ -25,9 +25,22 @@ class gambar {
     var hand9 = R.drawable.hand9
     var hand10 = R.drawable.hand10
 
-    var rank1 = R.drawable.rank1
-    var rank2 = R.drawable.rank2
-    var rank3 = R.drawable.rank3
+//    var rank1 = R.drawable.rank1
+//    var rank2 = R.drawable.rank2
+//    var rank3 = R.drawable.rank3
+    
+    var rank1 = R.id.nilai1
+    var rank2 = R.id.nilai2
+    var rank3 = R.id.nilai3
+    var rank4 = R.id.nilai4
+    var rank5 = R.id.nilai5
+    var rank6 = R.id.nilai6
+    var rank7 = R.id.nilai7
+    var rank8 = R.id.nilai8
+    var rank9 = R.id.nilai9
+    var rank10 = R.id.nilai10
+    var rank11 = R.id.nilai11
+    var rank12 = R.id.nilai12
 
     var handSoal1 = mutableListOf(
         listOf("Kuda", "Kuli", "Kuah", "Kuda", "Vina"),
@@ -55,32 +68,47 @@ class gambar {
         listOf("Badak", "Tikus", "Lord", "Turtle", "Kelinci")
     )
 
-    var playercolor1 = R.id.player1
-    var playercolor2 = R.id.player2
-    var playercolor3 = R.id.player3
-    var playercolor4 = R.id.player4
-    var playercolor5 = R.id.player5
-    var playercolor6 = R.id.player6
-    var playercolor7 = R.id.player7
-    var playercolor8 = R.id.player8
-    var playercolor9 = R.id.player9
-    var playercolor10 = R.id.player10
-    var playercolor11 = R.id.player11
-    var playercolor12 = R.id.player12
+    var player1 = R.id.player1
+    var player2 = R.id.player2
+    var player3 = R.id.player3
+    var player4 = R.id.player4
+    var player5 = R.id.player5
+    var player6 = R.id.player6
+    var player7 = R.id.player7
+    var player8 = R.id.player8
+    var player9 = R.id.player9
+    var player10 = R.id.player10
+    var player11 = R.id.player11
+    var player12 = R.id.player12
 
-    var listplayercolor = listOf(
-        playercolor1,
-        playercolor2,
-        playercolor3,
-        playercolor4,
-        playercolor5,
-        playercolor6,
-        playercolor7,
-        playercolor8,
-        playercolor9,
-        playercolor10,
-        playercolor11,
-        playercolor12
+    var listplayer = listOf(
+        player1,
+        player2,
+        player3,
+        player4,
+        player5,
+        player6,
+        player7,
+        player8,
+        player9,
+        player10,
+        player11,
+        player12
+    )
+
+    var listrank = listOf(
+        rank1,
+        rank2,
+        rank3,
+        rank4,
+        rank5,
+        rank6,
+        rank7,
+        rank8,
+        rank9,
+        rank10,
+        rank11,
+        rank12
     )
 
 

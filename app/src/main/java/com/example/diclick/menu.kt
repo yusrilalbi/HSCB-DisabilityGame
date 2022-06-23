@@ -21,7 +21,7 @@ class menu : AppCompatActivity() {
             startActivity(intent)
         }
         tesHand.setOnClickListener(){
-            var intent = Intent(this@menu, usernameInput1::class.java)
+            var intent = Intent(this@menu, handLevel::class.java)
             startActivity(intent)
         }
         exHint.setOnClickListener(){
