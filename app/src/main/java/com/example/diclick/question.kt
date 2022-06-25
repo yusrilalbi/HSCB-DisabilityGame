@@ -67,6 +67,7 @@ class question : AppCompatActivity() {
             mUserViewModel.addUser(allData)
             var intent = Intent(this@question, score::class.java)
             intent.putExtra("hasil","${stoper}")
+            intent.putExtra("nama","${userglobal}")
             startActivity(intent)
         }
         if(ans<10)

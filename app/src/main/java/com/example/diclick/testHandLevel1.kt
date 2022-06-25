@@ -65,6 +65,7 @@ class testHandLevel1 : AppCompatActivity() {
             mUserViewModel.addUser1(allData)
             var intent = Intent(this@testHandLevel1, score::class.java)
             intent.putExtra("hasil","${stoper}")
+            intent.putExtra("nama","${userglobal}")
             startActivity(intent)
         }
         if(ans<10)

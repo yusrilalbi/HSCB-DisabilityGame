@@ -61,7 +61,7 @@ class leaderboardHand : AppCompatActivity() {
                 Observer {
                     if(!it.isEmpty()){
                         for (i in it.indices){
-                            player[i].text = "${it[i].userKey} , ${it[i].nilai}"
+                            player[i].text = "${it[i].userKey}"
                             rank[i].text = "${it[i].nilai}"
                             if(i==11){
                                 break
@@ -82,7 +82,7 @@ class leaderboardHand : AppCompatActivity() {
                 Observer {
                     if(!it.isEmpty()){
                         for (i in it.indices){
-                            player[i].text = "${it[i].userKey} , ${it[i].nilai}"
+                            player[i].text = "${it[i].userKey}"
                             rank[i].text = "${it[i].nilai}"
                             if(i==11){
                                 break
@@ -102,7 +102,7 @@ class leaderboardHand : AppCompatActivity() {
                 Observer {
                     if(!it.isEmpty()){
                         for (i in it.indices){
-                            player[i].text = "${it[i].userKey} , ${it[i].nilai}"
+                            player[i].text = "${it[i].userKey}"
                             rank[i].text = "${it[i].nilai}"
                             if(i==11){
                                 break

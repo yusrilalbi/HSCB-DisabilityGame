@@ -12,7 +12,9 @@ class score : AppCompatActivity() {
         setContentView(R.layout.activity_score)
 
         var hasil = intent.getStringExtra("hasil")
-        var gobi = findViewById<TextView>(R.id.nilai)
+        var nama = intent.getStringExtra("nama")
+        var score = findViewById<TextView>(R.id.nilai)
+        var namaewa = findViewById<TextView>(R.id.namaewa)
         var kembali = findViewById<Button>(R.id.kembali)
 
         kembali.setOnClickListener(){
@@ -20,7 +22,9 @@ class score : AppCompatActivity() {
         }
 
         if (hasil != null) {
-            gobi.text = (hasil.toInt()*10).toString()
+            score.text = (hasil.toInt()*10).toString()
+            namaewa.text = nama
+
         }
 
 

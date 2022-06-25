@@ -30,7 +30,6 @@ class testHandLevel2 : AppCompatActivity() {
         pilgan.add(findViewById<Button>(R.id.pilgan2))
         pilgan.add(findViewById<Button>(R.id.pilgan3))
         pilgan.add(findViewById<Button>(R.id.pilgan4))
-        pilgan.add(findViewById<Button>(R.id.pilgan5))
 
         mUserViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
         var userintent = intent.getStringExtra("userintent")
@@ -44,18 +43,18 @@ class testHandLevel2 : AppCompatActivity() {
     fun repeatan(){
         var soal = findViewById<ImageView>(R.id.soal)
         //memberi tombol salah
-        for (i in 0..4){
+        for (i in 0..3){
             pilgan[i].setOnClickListener(){
                 ans += 1
                 repeatan()
             }
             // memberi pilgan
             if(ans<10)
-                pilgan[i].text = gambar.handSoal1[ans][i]
+                pilgan[i].text = gambar.handSoal2[ans][i]
         }
 
         //memberi tombol benar
-        pilgan[ans%5].setOnClickListener(){
+        pilgan[ans%4].setOnClickListener(){
             ans += 1
             stoper += 1
             repeatan()
@@ -65,10 +64,11 @@ class testHandLevel2 : AppCompatActivity() {
             mUserViewModel.addUser2(allData)
             var intent = Intent(this@testHandLevel2, score::class.java)
             intent.putExtra("hasil","${stoper}")
+            intent.putExtra("nama","${userglobal}")
             startActivity(intent)
         }
         if(ans<10)
-            soal.setImageResource(gambar.listHand1[ans])
+            soal.setImageResource(gambar.listHand2[ans])
 
         Log.d("kokalo","${ans}, ${stoper}")
     }

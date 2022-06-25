@@ -25,6 +25,43 @@ class gambar {
     var hand9 = R.drawable.hand9
     var hand10 = R.drawable.hand10
 
+    var hand21 = R.drawable.dua1
+    var hand22 = R.drawable.dua2
+    var hand23 = R.drawable.dua3
+    var hand24 = R.drawable.dua4
+    var hand25 = R.drawable.dua5
+    var hand26 = R.drawable.dua6
+    var hand27 = R.drawable.dua7
+    var hand28 = R.drawable.dua8
+    var hand29 = R.drawable.dua9
+    var hand210 = R.drawable.dua10
+
+    var hand31 = R.drawable.tiga1
+    var hand32 = R.drawable.tiga2
+    var hand33 = R.drawable.tiga3
+    var hand34 = R.drawable.tiga4
+    var hand35 = R.drawable.tiga5
+    var hand36 = R.drawable.tiga6
+    var hand37 = R.drawable.tiga7
+    var hand38 = R.drawable.tiga8
+    var hand39 = R.drawable.tiga9
+    var hand310 = R.drawable.tiga10
+
+    var handSoal3 = mutableListOf(
+        listOf(R.drawable.wa0, R.drawable.wa1, R.drawable.wa3),
+        listOf(R.drawable.wb1,R.drawable.wb0,R.drawable.wb2),
+        listOf(R.drawable.wc2,R.drawable.wc3,R.drawable.wc0),
+        listOf(R.drawable.wd0,R.drawable.wd2,R.drawable.wd3),
+        listOf(R.drawable.we1,R.drawable.we0,R.drawable.we2),
+        listOf(R.drawable.wf1,R.drawable.wf2,R.drawable.wf0),
+        listOf(R.drawable.wg0,R.drawable.wg1,R.drawable.wg2),
+        listOf(R.drawable.wh1,R.drawable.wh0,R.drawable.wh3),
+        listOf(R.drawable.wi1,R.drawable.wi2,R.drawable.wi0),
+        listOf(R.drawable.wj3,R.drawable.wj0,R.drawable.wj1)
+
+    )
+
+
 //    var rank1 = R.drawable.rank1
 //    var rank2 = R.drawable.rank2
 //    var rank3 = R.drawable.rank3
@@ -55,6 +92,19 @@ class gambar {
         listOf("Kemari", "Lelaki", "Kenari", "Temari", "Lemari")
     )
 
+    var handSoal2 = mutableListOf(
+        listOf("Baca Buku", "Baca Duku", "Beli Duku", "Beli Buku"),
+        listOf("Hati Kamu", "Hari Rabu", "Hati Kaku", "Halo Kamu" ),
+        listOf("Kaka Sakit", "Kita Sulit", "Kera Sakti", "Kaka Sakti" ),
+        listOf("Mata Suling", "Batu Genteng", "Kata Sanjung", "Kota Bandung" ),
+        listOf("Makan Siang", "Pakan Katak", " Cinta Ayang", "Makan Katak" ),
+        listOf("Kuda Betina", "Ayam Betina", "Ikan Betina", "Mata Betina" ),
+        listOf("Saya Suka Kamu", "Kaka Suka Apel", "Saya Suka Apel", "Kaka Suka Kamu" ),
+        listOf("Sore Siang Pagi", "Pergi Siang Sore", "Pagi Siang Soup", "Pagi Siang Sore" ),
+        listOf("Suka Bermain Game", "Saya Bermain Game", "Kaka Berkata Suka", "Suka Berkata Game" ),
+        listOf("Hari Mangga", "Hari Minggu", "Mari Monggo", "Suka Mangga" ),
+    )
+
     var colorSoal = mutableListOf(
         listOf("5", "3", "2", "5", "6"),
         listOf("10", "9", "8", "7", "6" ),
@@ -68,6 +118,27 @@ class gambar {
         listOf("Badak", "Tikus", "Lord", "Turtle", "Kelinci")
     )
 
+    var listColor = listOf(
+        color1, color2, color3, color4, color5,
+        color6, color7, color8, color9, color10
+    )
+
+    var listHand1 = listOf(
+        hand1, hand2, hand3, hand4, hand5,
+        hand6, hand7, hand8, hand9, hand10
+    )
+
+    var listHand2 = listOf(
+        hand21, hand22, hand23, hand24, hand25,
+        hand26, hand27, hand28, hand29, hand210
+    )
+
+    var listHand3 = listOf(
+        hand31, hand32, hand33, hand34, hand35,
+        hand36, hand37, hand38, hand39, hand310
+    )
+
+    //database preparation
     var player1 = R.id.player1
     var player2 = R.id.player2
     var player3 = R.id.player3
@@ -114,16 +185,5 @@ class gambar {
 
     var benar = R.drawable.benar
     var salah = R.drawable.salah
-
-
-    var listColor = listOf(
-        color1, color2, color3, color4, color5,
-        color6, color7, color8, color9, color10
-    )
-
-    var listHand1 = listOf(
-        hand1, hand2, hand3, hand4, hand5,
-        hand6, hand7, hand8, hand9, hand10
-    )
 
 }
