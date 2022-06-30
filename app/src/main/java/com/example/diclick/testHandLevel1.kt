@@ -1,6 +1,7 @@
 package com.example.diclick
 
 import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -11,12 +12,18 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.diclick.database.User
 import com.example.diclick.database.User1
 import com.example.diclick.database.UserViewModel
+import java.text.SimpleDateFormat
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+import java.util.*
+import kotlin.collections.ArrayList
 
 class testHandLevel1 : AppCompatActivity() {
 
     var ans = 0
     var stoper = 0
     var userglobal = ""
+    var time = ""
     var pilgan : MutableList<Button> = ArrayList()
     var konco : MutableList<Button> = ArrayList()
     var gambar = gambar()
@@ -61,11 +68,26 @@ class testHandLevel1 : AppCompatActivity() {
             repeatan()
         }
         if(ans==10){
-            val allData = User1(0,userglobal,stoper*10)
-            mUserViewModel.addUser1(allData)
+
             var intent = Intent(this@testHandLevel1, score::class.java)
             intent.putExtra("hasil","${stoper}")
             intent.putExtra("nama","${userglobal}")
+
+            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+                val current = LocalDateTime.now()
+                val formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy. HH:mm:ss")
+                time = current.format(formatter)
+            }
+            else {
+                var date = Date()
+                val formatter = SimpleDateFormat("MMM dd yyyy HH:mma")
+                time = formatter.format(date)
+            }
+
+            userglobal = "${userglobal}\n${time}"
+            val allData = User1(0,userglobal,stoper*10)
+            mUserViewModel.addUser1(allData)
+
             startActivity(intent)
         }
         if(ans<10)
